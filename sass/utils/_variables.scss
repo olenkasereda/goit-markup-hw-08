@@ -1,0 +1,25 @@
+
+    /* fonts */
+
+    $main-font: "Roboto", sans-serif;
+    $secondary-font: "Raleway", sans-serif;
+
+    /* text colors */
+    $brand-color: #2196f3;
+    $text-color: #212121;
+    $accent-color: #ffffff;
+    $accent-hover-color: #188ce8;
+
+    /* bg-colors */
+    $footer-color: #2f303a;
+    $button-accent: #f5f4fa;
+    $body-color: #757575;
+    $section-color: #f5f4fa;
+    $svg-color: #afb1b8;
+
+    /* others */
+    $items: 3;
+    $indent: 30px;
+    /* animation  */
+    $anima: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);

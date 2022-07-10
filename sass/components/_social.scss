@@ -1,0 +1,43 @@
+.social {
+    display: flex;
+
+    justify-content: center;
+    list-style: none;
+}
+
+.social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    color: $body-color;
+    background-color: transparent;
+
+    transition: $anima;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        background-color: $accent-hover-color;
+    }
+}
+
+
+
+.social__icon {
+    fill: currentColor;
+
+    &:hover,
+    &:focus {
+            fill: currentColor;
+        }
+}
+
+
+
+.social__item {
+     @include first-margin (left, 10px); 
+}

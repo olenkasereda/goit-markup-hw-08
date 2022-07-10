@@ -1,0 +1,143 @@
+.footer-page {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $footer-color;
+}
+
+.footer {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__address {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-footer {
+    color: $accent-color;
+}
+
+.footer__list {
+    margin-top: 20px;
+    font-family: $main-font;
+    font-style: normal;
+    list-style-type: none;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $accent-color;
+}
+
+.footer__item+.footer__item {
+    margin-top: 9px;
+}
+
+.footer__link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+
+    transition: $anima;
+
+    &:hover,
+    &:focus {
+        color: $brand-color;
+        }
+}
+
+
+
+.join {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.join__title {
+    padding-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $accent-color;
+}
+
+.join__link {
+    color: $accent-color;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social__item {
+    @include set-margin (left, 30px);
+}
+
+.form-footer {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 93px;
+}
+
+.form-footer__label {
+    display: block;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $accent-color;
+}
+
+.form-footer__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-left: 12px;
+    width: 200px;
+    height: 50px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    background: $brand-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: transparent;
+    color: $accent-color;
+
+    cursor: pointer;
+
+
+   &:hover,
+   &:focus {
+            background-color: $accent-hover-color;
+        }
+}
+
+
+
+.form-footer__icon {
+    content: "";
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-size: contain;
+}
+
+.form-footer__input {
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+    left: 815px;
+    top: 2787px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: $accent-color;
+}

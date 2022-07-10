@@ -1,0 +1,50 @@
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients__list {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    list-style: none;
+}
+
+.clients__item {
+    width: calc(100% / 6 - 30px);
+    height: 92px;
+
+@include first-margin (left, 30px);
+}
+
+
+.clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    border: 1px solid $svg-color;
+    border-radius: 4px;
+    color: $svg-color;
+
+    transition: $anima;
+
+
+   &:hover,
+   &:focus {
+            color: $brand-color;
+            border: 1px solid $brand-color;
+        }
+}
+
+
+
+.clients__icon {
+    fill: currentColor;
+
+    &:hover,
+    &:focus {
+        fill: currentColor;
+    }
+}
+
