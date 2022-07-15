@@ -1158,6 +1158,8 @@ body.no-scroll {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
     padding-top: 10px;
   }
 }
@@ -1222,6 +1224,8 @@ body.no-scroll {
 }
 @media screen and (min-width: 1200px) {
   .form-footer {
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
     padding-top: 10px;
     margin-left: 93px;
   }
@@ -1280,7 +1284,8 @@ body.no-scroll {
 }
 @media screen and (min-width: 1200px) {
   .form-footer__button {
-    margin-top: 36px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
 }
 
@@ -1312,7 +1317,6 @@ body.no-scroll {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .form-footer__input {
-    margin-bottom: 20px;
     width: 450px;
   }
 }
@@ -1422,6 +1426,12 @@ body.no-scroll {
             flex-direction: column;
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card {
+    -ms-flex-preferred-size: calc((100% - 90px) / 3);
+        flex-basis: calc((100% - 90px) / 3);
   }
 }
 

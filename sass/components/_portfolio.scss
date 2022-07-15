@@ -108,6 +108,9 @@
                     flex-direction: column;
                     flex-basis: calc((100% - 60px)/2);
                 }
+        @media screen and (min-width: $desktop) {
+            flex-basis: calc((100% - 90px)/3);
+        }
 }
 
 

@@ -41,6 +41,7 @@ align-items: center;
         }
     @media screen and (min-width: $desktop) {
         align-items: flex-start;
+        align-self: baseline;
     padding-top: 10px;
     }
     // margin-left: 70px;
@@ -99,7 +100,8 @@ align-items: center;
         }
        
     @media screen and (min-width: $desktop) {
-padding-top: 10px;
+        align-self: baseline;
+        padding-top: 10px;
         margin-left: 93px;
     }
 }
@@ -152,7 +154,8 @@ padding-top: 10px;
     margin-top: 20px;
 }
 @media screen and (min-width: $desktop) {
-    margin-top: 36px;
+    // margin-top: 36px;
+    align-self: flex-end;
 }
 }
 
@@ -186,7 +189,7 @@ padding-top: 10px;
     color: $accent-color;
 
     @media screen and (min-width:$tablet) and (max-width: ($desktop - 1)) {
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
         width: 450px;
     }
         @media screen and (min-width: $desktop) {
