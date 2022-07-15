@@ -1,0 +1,30 @@
+%list {
+  list-style: none;
+}
+//   @extend %link;
+%link {
+    text-decoration: none;
+    transition: $anima;
+    &:hover,
+    &:focus {
+        color: $accent-hover-color;
+    }
+}
+%button {
+  background-color: $brand-color;
+  color: $accent-color;
+
+  display: inline-block;
+  vertical-align: middle;
+
+  cursor: pointer;
+
+  font-size: 16px;
+  line-height: 1.87;
+  text-decoration: none;
+  border-radius: 4px;
+  min-width: 200px;
+  min-height: 50px;
+  letter-spacing: 0.06em;
+}
+

@@ -2,7 +2,7 @@
     display: flex;
 
     justify-content: center;
-    list-style: none;
+    @extend %list;
 }
 
 .social__link {
@@ -13,7 +13,7 @@
     height: 44px;
     border: 1px solid transparent;
     border-radius: 50%;
-    color: $body-color;
+    color: $svg-color;
     background-color: transparent;
 
     transition: $anima;

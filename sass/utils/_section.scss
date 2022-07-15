@@ -1,0 +1,19 @@
+.section {
+    @media screen and (max-width: ($desktop - 1)) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    }
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
+
+.section-name {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $text-color;
+}

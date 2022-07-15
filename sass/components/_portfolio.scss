@@ -1,23 +1,45 @@
-.portfolio-page {
-    padding: 94px 0;
-}
+// .portfolio-page {
+//     padding: 94px 0;
+// }
 
+// .filters {
+//     display: flex;
+//     flex-wrap: wrap;
+//     // margin-bottom: 50px;
+//     // justify-content: center;
+//     margin-bottom: 40px;
+//     column-gap: 8px;
+//     font-weight: 500;
+
+//     font-size: 16px;
+//     line-height: 1.62;
+//     letter-spacing: 0.03em;
+//     color: $text-color;
+//     list-style-type: none;
+// }
 .filters {
+    @extend %list;
     display: flex;
-    margin-bottom: 50px;
-    justify-content: center;
-    font-weight: 500;
-
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.03em;
-    color: $text-color;
-    list-style-type: none;
+    flex-wrap: wrap;
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    
 }
+.portfolio__filters {
+    // margin-bottom: 40px;
+    row-gap: 15px;
 
-.filters__item {
-    @include first-margin (left, 8px);
+    @media screen and (max-width: ($tablet - 1))  {
+            margin-bottom: 40px;
+        }
+           @media screen and (min-width: $tablet) {
+               margin-bottom: 30px;
+               justify-content: center;
+           }
 }
+// .filters__item {
+//     @include first-margin (left, 8px);
+// }
 
 .filters__button {
     padding-top: 6px;
@@ -59,15 +81,20 @@
 .card-set {
     display: flex;
     flex-wrap: wrap;
-    list-style-type: none;
-    margin: calc(-1 * $indent / 2);
+    @extend %list;   
+    margin-top: -30px;
+    margin-left: -30px;
+    
+    // margin: calc(-1 * $indent / 2);
 }
 
 .card {
-    margin: calc($indent / 2);
-    flex-basis: calc((100% - $indent * $items) / $items);
-    /* flex-basis: calc(100% / $items - $indent); */
-
+    // margin: calc($indent / 2);
+    // flex-basis: calc((100% - $indent * $items) / $items);
+    // /* flex-basis: calc(100% / $items - $indent); */
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: 100%;
     transition: $anima;
 
 
@@ -75,6 +102,12 @@
         &:focus {
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
         }
+
+                @media screen and (min-width: $tablet)  {
+                    display: flex;
+                    flex-direction: column;
+                    flex-basis: calc((100% - 60px)/2);
+                }
 }
 
 
@@ -107,7 +140,6 @@
     justify-content: center;
     font-family: $main-font;
 
-    font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
@@ -123,6 +155,7 @@
 /*------------------------*/
 
 .card__wrapper {
+        flex-grow: 1;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;

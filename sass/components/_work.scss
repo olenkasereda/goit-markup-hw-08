@@ -1,13 +1,24 @@
+@media screen and (max-width: ($desktop - 1)) {
 .work {
-    padding-bottom: 94px;
+        display: none;
+    }
+
+    // .work__list,
+    // .team__list {
+    //     @extend %list;
+    // }
 }
 
+
+.work {
+    padding-top: 0;
+}
 .work__list,
 .team__list {
     display: flex;
     margin-top: 50px;
     justify-content: center;
-    list-style-type: none;
+    @extend %list;
 }
 
 

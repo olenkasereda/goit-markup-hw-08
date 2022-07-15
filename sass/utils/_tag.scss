@@ -5,7 +5,7 @@ h4,
 h5,
 h6,
 p,
-ul {
+ul{
     margin: 0;
     padding: 0;
 }
@@ -20,4 +20,10 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+body.modal-open {
+    overflow: hidden;
+}
+body.no-scroll {
+    overflow-y: hidden;
 }

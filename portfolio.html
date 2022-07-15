@@ -19,43 +19,64 @@
 	</head>
 	<body>
 		<!-- header -->
-		<header class="container">
-			<div class="header">
-				<nav class="header__nav">
-					<a class="logo" href="./index.html" lang="en"> Web<span class="header__studio">Studio</span> </a>
-					<ul class="header__list">
-						<li class="header__item"><a class="header__link header__link--current" href="./index.html">Студия</a></li>
-						<li class="header__item"><a class="header__link" href="./portfolio.html">Портфолио</a></li>
-						<li class="header__item"><a class="header__link" href="/">Контакты</a></li>
+		<header class="page-header">
+			<div class="container page-header__container">
+				<a class="logo" href="./index.html" lang="en"> Web<span class="logo__header">Studio</span> </a>
+				<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+					<svg width="40" height="40" aria-label="Переключатель мобильного меню">
+						<use class="icon-menu" href="./images/symbol.svg#menu"></use>
+					</svg>
+				</button>
+
+				<div class="menu-container js-menu-container" id="mobile-menu">
+					<button class="menu-toggle js-close-menu">
+						<svg width="40" height="40" aria-label="Переключатель мобильного меню">
+							<use class="icon-cross" href="./images/symbol.svg#cross"></use>
+						</svg>
+					</button>
+
+					<nav class="page-header__nav">
+						<ul class="menu">
+							<li class="menu__item"> <a class="menu__link menu__link--current" href="./index.html">Студия </a></li>
+							<li class="menu__item"><a class="menu__link" href="./portfolio.html">Портфолио</a></li>
+							<li class="menu__item"><a class="menu__link" href="/">Контакты</a></li>
+						</ul>
+					</nav>
+
+					<ul class="contacts">
+						<li class="contacts-item">
+							<a class="contacts__tel contacts__link" href="tel:+380961111111">
+								<svg class="contacts__icon" width="12" height="18">
+									<use class="tel" href="./images/symbol.svg#icon-phone"></use>
+								</svg>
+								+38 096 111 11 11
+							</a>
+						</li>
+						<li class="contacts__item">
+							<a class="contacts__mail contacts__link" href="mailto:info@devstudio.com">
+								<svg class="contacts__icon" width="16" height="12">
+									<use href="./images/symbol.svg#icon-envelope"></use>
+								</svg>
+								info@devstudio.com
+							</a>
+						</li>
 					</ul>
-				</nav>
-				<ul class="contacts">
-					<li class="contacts__item">
-						<a class="contacts__link" href="mailto:info@devstudio.com">
-							<svg class="icon" width="16" height="12">
-								<use href="./images/symbol.svg#icon-envelope"></use>
-							</svg>
-							info@devstudio.com
-						</a>
-					</li>
-					<li class="contacts-item">
-						<a class="contacts__link" href="tel:+380961111111">
-							<svg class="icon" width="12" height="18">
-								<use class="tel" href="./images/symbol.svg#icon-phone"></use>
-							</svg>
-							+38 096 111 11 11
-						</a>
-					</li>
-				</ul>
+					<ul class="menu-social">
+						<li class="menu-social__item"><a class="menu-social__link" href="">Instagram</a> </li>
+						<li class="menu-social__item"><a class="menu-social__link" href="">Twitter</a> </li>
+						<li class="menu-social__item"><a class="menu-social__link" href="">Facebook</a> </li>
+						<li class="menu-social__item"><a class="menu-social__link" href="">LinkedIn</a> </li>
+					</ul>
+				</div>
 			</div>
 		</header>
 		<!-- main -->
 		<main>
 			<!-- portfolio -->
-			<section class="portfolio-page">
+			<section class="portfolio-page section">
 				<div class="container">
 					<h1 class="visually-hidden">Портфолио</h1>
-					<ul class="filters">
+					<ul class="filters portfolio__filters">
 						<!-- filters -->
 						<li class="filters__item">
 							<button class="filters__button filters__button--current" type="button">Все</button>
@@ -213,7 +234,7 @@
 			</section>
 		</main>
 		<!-- footer -->
-		<footer class="footer-page">
+		<footer class="footer-page section">
 			<div class="container">
 				<div class="footer">
 					<div class="footer__address">
@@ -279,4 +300,14 @@
 				</div>
 			</div>
 		</footer>
+		<!-- <script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"
+		></script> -->
+		<script defer src="js/mobile-menu.js"></script>
+		<script src="./js/modal.js"></script>
+		<!-- <script src="./js/menu.js"></script> -->
+	</body>
 </html>
