@@ -32,20 +32,7 @@ align-items: center;
             margin-right: 70px;
         }
   }
-.join {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @media screen and (max-width: ($desktop - 1)) {
-            margin-bottom: 60px;
-        }
-    @media screen and (min-width: $desktop) {
-        align-items: flex-start;
-        align-self: baseline;
-    padding-top: 10px;
-    }
-    // margin-left: 70px;
-}
+
 .footer__list {
     margin-top: 20px;
   
@@ -55,7 +42,7 @@ align-items: center;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $accent-color;
-    @media screen and (max-width: ($desktop - 1)) {
+@media screen and (max-width: ($desktop - 1)) {
       text-align: center;
 }
 }
@@ -83,15 +70,26 @@ align-items: center;
     color: $accent-color;
    
 }
+.join {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    @media screen and (max-width: ($desktop - 1)) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        align-items: flex-start;
+        align-self: baseline;
+        padding-top: 10px;
+    }
+}
 .join__link {
     color: $accent-color;
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-// .social__item {
-//     @include first-margin (left, 30px);
-// }
 
 .form-footer {
         display: flex;
@@ -118,7 +116,10 @@ align-items: center;
     color: $accent-color;
     @media screen and (max-width: $desktop) {
         text-align: center;
-    }
+    }   
+     @media screen and (max-width: ($desktop - 1)) {
+            text-align: center;
+        }
 }
 
 .form-footer__button {
@@ -168,20 +169,12 @@ align-items: center;
     background-size: contain;
 }
 
-.form-footer__label {
-    @media screen and (max-width: ($desktop - 1)) {
-        text-align: center;
-    }
-
-}
-
 .form-footer__input {
    
     padding-left: 16px;
     width: 100%;
     height: 50px;
-    // left: 815px;
-    // top: 2787px;
+   
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -197,6 +190,3 @@ align-items: center;
             margin-right: 12px;
         }
 }
-
-
-

@@ -8,22 +8,50 @@
         line-height: 1.6;
     }
 
-        .hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
+.hero {
     text-align: center;
-    max-width: 1600px;
-    height: 400px;
     margin-left: auto;
     margin-right: auto;
-
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
 
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/hero.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/hero@2x.jpg);
+        }
+
+ @media screen and (min-width: $tablet) {
+     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/tablet/hero.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/tablet/hero@2x.jpg');
+        }
+ }
+   @media screen and (max-width: ($desktop - 1)) {
+       padding: 118px 0;
+   }
+
+   @media screen and (min-width: $desktop) {
+       max-width: 1600px;
+       padding: 200px 0;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/hero.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/hero@2x.jpg');
+       }
+   }
+   }
+        
  .hero__button {
          margin-top: 30px;
          padding-bottom: 10px;
@@ -45,79 +73,6 @@
 
      &:hover,
      &:focus {
-         /* color: var(--accent-color); */
          background-color: $accent-hover-color;
      }
      }
-// @media screen and (min-width: 400px){
-//     .hero__title {
-//         font-size: 26px;
-//             line-height: 1.6;
-//         }
-
-//                 .overlay {
-//                     height: 600px;
-//                 }
-//     }
-
-
-
-
-
-
-
-
-
-// .overlay {
-//     padding-top: 200px;
-//     padding-bottom: 200px;
-//     text-align: center;
-//     max-width: 1600px;
-//     height: 600px;
-//     margin-left: auto;
-//     margin-right: auto;
-
-//     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
-
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-size: cover;
-// }
-// .hero {
-//     background-color: #c4c4c4;
-// }
-// .hero__title {
-//     font-weight: 900;
-//     font-size: 44px;
-//     line-height: 1.36;
-//     text-align: center;
-//     letter-spacing: 0.06em;
-//     text-transform: uppercase;
-//     color: $accent-color;
-// }
-
-// .hero__button {
-//     margin-top: 30px;
-//     padding-bottom: 10px;
-//     padding-top: 10px;
-//     padding-left: 32px;
-//     padding-right: 32px;
-//     border-radius: 4px;
-//     font-weight: 700;
-//     font-size: 16px;
-//     line-height: 1.88;
-//     font-family: inherit;
-//     letter-spacing: 0.06em;
-//     color: #ffffff;
-//     background-color: $brand-color;
-//     cursor: pointer;
-//     border: none;
-
-//     transition: $anima;
-
-// &:hover,
-// &:focus {
-//     /* color: var(--accent-color); */
-//     background-color: $accent-hover-color;
-// }
-// }
