@@ -1,192 +1,168 @@
 .footer-page {
-    background-color: $footer-color;
+	background-color: $footer-color;
 }
 .footer {
-    display: flex;
-    flex-direction: column;
-    @media screen and (min-width:$tablet) and (max-width: ($desktop - 1)) {
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-            align-items: baseline;
-        }
-    @media screen and (min-width: $desktop) {
-        flex-direction: row;
-        justify-content: space-between;
-        }
+	display: flex;
+	flex-direction: column;
+	@media screen and (min-width: $tablet) and (max-width: ($desktop - 1)) {
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		align-items: baseline;
+	}
+	@media screen and (min-width: $desktop) {
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }
-
 
 .logo-footer {
-    color: $accent-color;
+	color: $accent-color;
 }
 .footer__address {
-    display: flex;
-    flex-direction: column;
-   
-    @media screen and (max-width: ($desktop - 1)) {
-margin-bottom: 60px;
-align-items: center;
-    }
-        @media screen and (min-width: $desktop) {
-            margin-right: 70px;
-        }
-  }
+	display: flex;
+	flex-direction: column;
+
+	@media screen and (max-width: ($desktop - 1)) {
+		margin-bottom: 60px;
+		align-items: center;
+	}
+	@media screen and (min-width: $desktop) {
+		margin-right: 70px;
+	}
+}
 
 .footer__list {
-    margin-top: 20px;
-  
-    font-family: $main-font;
-    font-style: normal;
-    list-style: none;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: $accent-color;
-@media screen and (max-width: ($desktop - 1)) {
-      text-align: center;
+	margin-top: 20px;
+
+	font-family: $main-font;
+	font-style: normal;
+	list-style: none;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: $accent-color;
+	@media screen and (max-width: ($desktop - 1)) {
+		text-align: center;
+	}
 }
-}
-.footer__item+.footer__item {
-    margin-top: 9px;
+.footer__item + .footer__item {
+	margin-top: 9px;
 }
 .footer__link {
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
+	color: rgba(255, 255, 255, 0.6);
+	text-decoration: none;
 
-    transition: $anima;
+	transition: $anima;
 
-    &:hover,
-    &:focus {
-        color: $brand-color;
-    }
+	&:hover,
+	&:focus {
+		color: $brand-color;
+	}
 }
 
 .join__title {
-    padding-bottom: 20px;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $accent-color;
-   
+	padding-bottom: 20px;
+	font-weight: 700;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: $accent-color;
 }
 .join {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
-    @media screen and (max-width: ($desktop - 1)) {
-        margin-bottom: 60px;
-    }
+	@media screen and (max-width: ($desktop - 1)) {
+		margin-bottom: 60px;
+	}
 
-    @media screen and (min-width: $desktop) {
-        align-items: flex-start;
-        align-self: baseline;
-        padding-top: 10px;
-    }
+	@media screen and (min-width: $desktop) {
+		align-items: flex-start;
+		align-self: baseline;
+		padding-top: 10px;
+	}
 }
 .join__link {
-    color: $accent-color;
-    background-color: rgba(255, 255, 255, 0.1);
+	color: $accent-color;
+	background-color: rgba(255, 255, 255, 0.1);
 }
-
 
 .form-footer {
-        display: flex;
-        @media screen and (max-width: $desktop) {
-            flex-direction: column;
-        }
-       
-    @media screen and (min-width: $desktop) {
-        align-self: baseline;
-        padding-top: 10px;
-        margin-left: 93px;
-    }
+	display: flex;
+	@media screen and (max-width: $desktop) {
+		flex-direction: column;
+	}
+
+	@media screen and (min-width: $desktop) {
+		align-self: baseline;
+		padding-top: 10px;
+		margin-left: 93px;
+	}
 }
 .form-footer__label {
-    display: block;
-     margin-bottom: 20px;
+	display: block;
+	margin-bottom: 20px;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
 
-    color: $accent-color;
-    @media screen and (max-width: $desktop) {
-        text-align: center;
-    }   
-     @media screen and (max-width: ($desktop - 1)) {
-            text-align: center;
-        }
+	color: $accent-color;
+	@media screen and (max-width: $desktop) {
+		text-align: center;
+	}
+	@media screen and (max-width: ($desktop - 1)) {
+		text-align: center;
+	}
 }
 
 .form-footer__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-    // margin-left: 12px;
-    width: 200px;
-    height: 50px;
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-
-    background: $brand-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: transparent;
-    color: $accent-color;
-
-    cursor: pointer;
-
-
-    &:hover,
-    &:focus {
-        background-color: $accent-hover-color;
-    }
-@media screen and (max-width: ($desktop - 1)) {
-    margin-top: 20px;
-}
-@media screen and (min-width: $desktop) {
-    // margin-top: 36px;
-    align-self: flex-end;
-}
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	// margin-left: 12px;
+    @extend %button;
+	@media screen and (max-width: ($desktop - 1)) {
+		margin-top: 20px;
+	}
+	@media screen and (min-width: $desktop) {
+		// margin-top: 36px;
+		align-self: flex-end;
+	}
 }
 
 .form-footer__icon {
-    content: "";
-    fill: currentColor;
-    width: 24px;
-    height: 24px;
-    margin-left: 10px;
-    background-size: contain;
+	content: "";
+	fill: currentColor;
+	width: 24px;
+	height: 24px;
+	margin-left: 10px;
+	background-size: contain;
 }
 
 .form-footer__input {
-   
-    padding-left: 16px;
-    width: 100%;
-    height: 50px;
-   
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    color: $accent-color;
+	padding-left: 16px;
+	width: 100%;
+	height: 50px;
 
-    @media screen and (min-width:$tablet) and (max-width: ($desktop - 1)) {
-        // margin-bottom: 20px;
-        width: 450px;
-    }
-        @media screen and (min-width: $desktop) {
-            width: 358px;
-            margin-right: 12px;
-        }
+	background-color: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	color: $accent-color;
+
+	@media screen and (min-width: $tablet) and (max-width: ($desktop - 1)) {
+		// margin-bottom: 20px;
+		width: 450px;
+	}
+	@media screen and (min-width: $desktop) {
+		width: 358px;
+		margin-right: 12px;
+	}
 }

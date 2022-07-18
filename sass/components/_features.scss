@@ -1,97 +1,54 @@
-
 .features__list {
-          @extend %list;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        @media screen and (min-width: $tablet) and (max-width: ($desktop - 1)) {
-            flex-wrap: wrap;
-        }
-        @media screen and (min-width: $tablet) {
-           display: flex;
-           
-            margin: -15px;
-        }
-    }
-.features__item {
-    @media screen and (max-width: ($tablet - 1)) {
-            @include first-margin (top, 30px);
-    }
-@media screen and (min-width: $tablet) {
-margin: 15px;
-flex-basis: calc((100% - 60px) / 2);
+	@extend %list;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	@media screen and (min-width: $tablet) and (max-width: ($desktop - 1)) {
+		flex-wrap: wrap;
+	}
+	@media screen and (min-width: $tablet) {
+		display: flex;
+
+		margin: -15px;
+	}
 }
+.features__item {
+	@media screen and (max-width: ($tablet - 1)) {
+		@include first-margin(top, 30px);
+	}
+	@media screen and (min-width: $tablet) {
+		margin: 15px;
+		flex-basis: calc((100% - 60px) / 2);
+	}
 }
 .features__icon {
-    display: flex;
-    content: "";
-    height: 120px;
-    // width: 450px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    justify-content: center;
-    align-items: center;
-    background-color: #f5f4fa;
-    border-radius: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	content: "";
+	height: 120px;
+	// width: 450px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	background-color: #f5f4fa;
+	border-radius: 4px;
 }
 
 .features__text {
-    text-align: center;
+	text-align: center;
+	margin-top: 30px;
 
-    margin-top: 30px;    
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $text-color;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: $text-color;
 }
 
 .features__descr {
-    margin-top: 10px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-
+	margin-top: 10px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
 }
-
-// .features {
-//     display: flex;
-//     list-style-type: none;
-//     line-height: 1.71;
-//     letter-spacing: 0.03em;
-// }
-
-// .features__item {
-//     @include first-margin (left, 30px);
-// }
-
-// .features__icon {
-//     display: inline-flex;
-//     content: "";
-//     height: 120px;
-//     width: 270px;
-//     background-size: contain;
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     justify-content: center;
-//     align-items: center;
-//     background-color: #f5f4fa;
-//     border-radius: 4px;
-// }
-
-// .features__text {
-//     margin-top: 30px;
-//     font-weight: 700;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.03em;
-//     text-transform: uppercase;
-//     color: $text-color;
-// }
-
-// .features__descr {
-//     margin-top: 10px;
-//     line-height: 1.71;
-//     letter-spacing: 0.03em;
-//     width: 270px;
-// }

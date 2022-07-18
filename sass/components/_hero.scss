@@ -1,6 +1,6 @@
 .hero__title {
+        text-align: center;
         font-weight: 900;
-         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: $accent-color;
@@ -54,25 +54,6 @@
         
  .hero__button {
          margin-top: 30px;
-         padding-bottom: 10px;
-         padding-top: 10px;
-         padding-left: 32px;
-         padding-right: 32px;
-         border-radius: 4px;
-         font-weight: 700;
-         font-size: 16px;
-         line-height: 1.88;   
-         font-family: inherit;
-         letter-spacing: 0.06em;
-         color: #ffffff;
-         background-color: $brand-color;
-         cursor: pointer;
-         border: none;
-
-         transition: $anima;
-
-     &:hover,
-     &:focus {
-         background-color: $accent-hover-color;
-     }
+        padding: 10px;
+        @extend %button;
      }
