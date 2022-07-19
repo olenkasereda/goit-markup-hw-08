@@ -112,11 +112,17 @@ body.no-scroll {
 .section-name {
   margin-bottom: 30px;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 1.18;
+  font-size: 36px;
+  line-height: 1.7;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+@media screen and (max-width: 1199px) {
+  .section-name {
+    font-size: 28px;
+    line-height: 1.18;
+  }
 }
 
 .container {
@@ -359,6 +365,7 @@ body.no-scroll {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    gap: 30px;
   }
 }
 
@@ -404,6 +411,10 @@ body.no-scroll {
   }
 }
 
+.contacts__tel {
+  font-size: 14px;
+  line-height: 1.14;
+}
 @media screen and (max-width: 767px) {
   .contacts__tel {
     font-size: 34px;
@@ -412,6 +423,10 @@ body.no-scroll {
   }
 }
 
+.contacts__mail {
+  font-size: 14px;
+  line-height: 1.14;
+}
 @media screen and (max-width: 767px) {
   .contacts__mail {
     font-size: 24px;
@@ -477,6 +492,12 @@ body.no-scroll {
   color: #ffffff;
   font-size: 26px;
   line-height: 1.6;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero {
@@ -866,7 +887,6 @@ body.no-scroll {
 }
 
 .features__text {
-  text-align: center;
   margin-top: 30px;
   font-weight: 700;
   font-size: 14px;
@@ -874,6 +894,11 @@ body.no-scroll {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+}
+@media screen and (max-width: 767px) {
+  .features__text {
+    text-align: center;
+  }
 }
 
 .features__descr {
@@ -1101,6 +1126,7 @@ body.no-scroll {
 
 .footer-page {
   background-color: #2f303a;
+  padding: 60px 0;
 }
 
 .footer {

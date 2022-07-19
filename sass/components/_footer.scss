@@ -1,5 +1,6 @@
 .footer-page {
 	background-color: $footer-color;
+	padding: 60px 0;
 }
 .footer {
 	display: flex;
@@ -127,7 +128,7 @@
 	margin-right: auto;
 	padding: 0;
 	// margin-left: 12px;
-    @extend %button;
+	@extend %button;
 	@media screen and (max-width: ($desktop - 1)) {
 		margin-top: 20px;
 	}

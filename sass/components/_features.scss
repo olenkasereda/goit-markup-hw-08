@@ -36,7 +36,6 @@
 }
 
 .features__text {
-	text-align: center;
 	margin-top: 30px;
 
 	font-weight: 700;
@@ -45,6 +44,9 @@
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: $text-color;
+	@media screen and (max-width: ($tablet - 1)) {
+		text-align: center;
+	}
 }
 
 .features__descr {

@@ -133,6 +133,7 @@
 	@media screen and (min-width: $desktop) {
 		flex-direction: row-reverse;
 		align-items: center;
+		gap: 30px;
 	}
 }
 .menu,
@@ -169,6 +170,8 @@
 }
 
 .contacts__tel {
+	font-size: 14px;
+	line-height: 1.14;
 	@media screen and (max-width: ($tablet - 1)) {
 		font-size: 34px;
 		line-height: 1.18;
@@ -177,6 +180,8 @@
 }
 
 .contacts__mail {
+	font-size: 14px;
+	line-height: 1.14;
 	@media screen and (max-width: ($tablet - 1)) {
 		font-size: 24px;
 		line-height: 1.17;

@@ -6,6 +6,11 @@
 	color: $accent-color;
 	font-size: 26px;
 	line-height: 1.6;
+
+	@media screen and (min-width: $desktop) {
+		font-size: 44px;
+		line-height: 1.36;
+	}
 }
 
 .hero {
